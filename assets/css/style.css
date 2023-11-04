@@ -156,6 +156,7 @@ body {
   grid-template-columns: repeat(3, 350px);
   grid-auto-rows: minmax(200px, auto);
   grid-gap: 1rem;
+  
 }
 
 .card {
@@ -167,6 +168,8 @@ body {
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+
+
 }
 
 .card > div {
@@ -174,6 +177,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   gap: 1rem;
+ 
 }
 
 .card-heading {
@@ -271,3 +275,7 @@ body {
     margin: 0 auto;
   }
 }
+
+
+
+
