@@ -135,6 +135,7 @@ body {
 .text-poem-example {
   font-weight: 500;
   font-size: 1rem;
+  color: #ffffff;
 }
 
 .line-poem-section {
@@ -244,6 +245,11 @@ body {
   .title-example,
   .text-poem-example {
     text-align: center;
+  }
+
+  .poems-container{
+    grid-template-columns: minmax(200px, 350px);
+    grid-auto-rows: auto;
   }
 }
 
