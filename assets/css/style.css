@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  list-style: none;
+}
+
+:root {
+  --color-dark-blue: #0c356a;
+  --color-light-blue: #0174be;
+  --color-golden: #ffc436;
+  --color-bege: #fff0ce;
+}
+
+html,
+body {
+  background: linear-gradient(90deg, #3b82f6 0%, #1d4ed8 100%);
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.container-add-example {
+  width: 100vw;
+  background: linear-gradient(
+    90deg,
+    rgba(250, 204, 21, 1) 0%,
+    rgba(234, 179, 8, 1) 100%
+  );
+}
+
+.container-example {
+  width: 996px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 90px 0 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-area {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-area > h1 {
+  text-align: start;
+  width: 100%;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.input-area > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-poem {
+  width: 400px;
+  height: 3rem;
+  padding: 0 1rem;
+  border-radius: 0.313rem;
+}
+
+.add-poem-input {
+  font: 700 1.1rem/16px sans-serif;
+}
+
+.add-poem-text {
+  font: 500 1.1rem/16px sans-serif;
+  padding-top: 1rem;
+  height: 200px;
+  resize: none;
+  color: #8a90a2;
+}
+
+.add-poem-input::placeholder,
+.add-poem-text::placeholder {
+  color: #9da3b4;
+}
+
+.add-poem-btn {
+  width: 100%;
+  padding: 0.8rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 0.625rem;
+  text-transform: uppercase;
+  background-color: #1e40af;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 300ms linear;
+}
+
+.add-poem-btn:hover {
+  background-color: #433cc0;
+}
+
+.line {
+  width: 2px;
+  height: 400px;
+  background-color: #5956e9;
+}
+
+.poem-example {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.625rem;
+}
+
+.line-poem-example {
+  width: 100%;
+  height: 1px;
+  background-color: #5956e9;
+}
+
+.title-example {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.text-poem-example {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.line-poem-section {
+  width: 1280px;
+  height: 1px;
+  background-color: #5956e9;
+  margin: 0 auto;
+}
+
+.poems-container {
+  padding: 1rem 0;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  align-content: start;
+  grid-template-columns: repeat(3, 350px);
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 1rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 0.625rem;
+  padding: 1rem;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.card-heading {
+  color: #000000;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.card-text {
+  color: #8a90a2;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.trash {
+  width: 42px;
+  height: 42px;
+  background-color: #dc2626;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.trash > svg {
+  width: 42px;
+  height: 42px;
+}
+
+@media screen and (max-width: 1280px) {
+  .container-example {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container-example {
+    max-width: 768px;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    flex-direction: column;
+  }
+
+  .input-area,
+  .poem-example {
+    width: 95%;
+  }
+
+  .input-area > div,
+  .input-poem {
+    width: 100%;
+  }
+
+  .add-poem-text {
+    height: 200px;
+  }
+
+  .line {
+    width: 95%;
+    height: 1px;
+  }
+
+  .line-poem-example {
+    display: none;
+  }
+
+  .title-example,
+  .text-poem-example {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .container-example {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container-add-example {
+    background-color: #facc15;
+  }
+
+  .container-example {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}

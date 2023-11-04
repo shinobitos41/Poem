@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/google.png"
+      type="image/x-icon"
+    />
+    <title>Seu poema</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="container-add-example">
+      <div class="container-example">
+        <div class="input-area">
+          <h1>Crie seu poema</h1>
+          <div>
+            <input
+              id="add-poem-title"
+              class="add-poem-input input-poem"
+              placeholder="Título do poema"
+              type="text"
+            />
+            <textarea
+              id="add-poem-text"
+              class="add-poem-text input-poem"
+              placeholder="Digite seu poema"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button
+              onclick="addPoem(event)"
+              id="add-poem-btn"
+              class="add-poem-btn"
+            >
+              Adicionar
+            </button>
+          </div>
+        </div>
+        <hr class="line" />
+        <div class="poem-example">
+          <h1 class="title-example">Soneto de Fidelidade</h1>
+          <hr class="line-poem-example" />
+          <p class="text-poem-example">
+            Queria marcar algumas coisas na alma; eternizar nossos olhares, seu
+            carinho cheio de afeto, ou a abertura do teto.
+            <br />
+            <br />
+            Não havia estrelas naquela noite, não precisava haver estrelas para
+            receber meu desejo, pois tudo o que eu queria estava naquela hidro.
+            <br />
+            <br />
+            Naquele efêmero momento, nossos olhares se cruzaram por um instante,
+            nos encontramos, sorrimos e nos perdemos, e até hoje penso, como
+            seria se tivesse sido.
+            <br />
+            <br />
+            A névoa está cobrindo o que foi despido. Já não se sabe como era a
+            roupa e nem o que foi dito. Somente o sentimento anda contigo.
+            Queria que você lembrasse de nós, mas eu me faço invisível, Não
+            posto nada, não te chamo, não te persigo e nem diggo " ainda podemos
+            ser amigos?" Me escondendo de tudo, me isolo do mundo.
+            <br />
+            <br />
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="poemsContainer" class="poems-container"></section>
+    <script src="./assets/scripts/app.js"></script>
+  </body>
+</html>
