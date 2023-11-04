@@ -75,6 +75,10 @@ function addPoem(event) {
 
   const item = poemModel(titlePoem, textPoem);
 
+  if(titlePoem === ""&& textPoem === "") {
+    alert("algo deu errado.")
+    return 
+  }
   const storedPoem = JSON.parse(
     localStorage.getItem(KEY_POEM_LOCAL_STORAGE) || '[]',
   );
